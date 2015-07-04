@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.maimai.demo.widget.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                                       android:id="@+id/keyboardLayout"
+                                       android:orientation="vertical"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+        >
+
+    <ListView
+            android:id="@+id/llMainList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:scrollbars="none"
+            android:divider="@color/light_gray3"
+            android:dividerHeight="0.5dp"
+            android:background="@null"
+            />
+
+
+    <View
+            android:id="@+id/viEmptyView"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+            android:id="@+id/rlCommentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/edit_comment_bg"
+                >
+
+            <View
+                    android:id="@+id/viDivider"
+                    style="@style/view_divider_vertical"
+                    />
+
+
+            <LinearLayout
+                    android:id="@+id/llLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_bg"
+                    android:layout_below="@id/viDivider"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/btnSend"
+                    >
+
+                <com.maimai.demo.widget.emojicon.EmojiconEditText
+                        android:id="@+id/etEditComment"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:layout_marginRight="5dp"
+                        android:padding="5dp"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+                        app:emojiconSize="20sp"
+                        />
+
+                <Button
+                        android:id="@+id/btnEmoji"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/topic_e_bg_selector"
+                        android:layout_marginRight="10dp"
+                        />
+            </LinearLayout>
+
+            <Button
+                    android:id="@+id/btnSend"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/round_gray_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/btn_comment_text_gray"
+                    android:text="评论"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:layout_marginRight="5dp"
+                    android:textSize="14sp"
+                    android:layout_alignTop="@id/llLayout"
+                    android:layout_alignBottom="@id/llLayout"
+                    />
+
+        </RelativeLayout>
+
+        <GridView
+                android:id="@+id/gvEmojiGrid"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:columnWidth="40dip"
+                android:horizontalSpacing="0dip"
+                android:numColumns="auto_fit"
+                android:scrollbars="vertical"
+                android:visibility="gone"
+                android:verticalSpacing="0dip"
+                />
+    </LinearLayout>
+
+
+</com.maimai.demo.widget.KeyboardLayout>

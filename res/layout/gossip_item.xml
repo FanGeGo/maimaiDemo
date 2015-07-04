@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="#eef0f3"
+              android:paddingLeft="20dp"
+              android:paddingTop="20dp"
+              android:paddingRight="20dp"
+              android:gravity="center"
+        >
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.4"
+            android:minHeight="100dp"
+            android:text="【美国CNN女主播就南海发问 崔天凯直面回应】4日，中国驻美大使崔天凯接受CNN知名主播专访，女主播开门见山，直指中美在南海问题上的分歧。崔天凯镇定回应：南海现状已经被其他国家改变很久很久了，我们所做的只是还原（南海）应有的状态。我们在那有军事设施，但那是防御性的。"
+            android:gravity="center_vertical"
+            />
+
+
+    <ImageView
+            android:id="@+id/ivImage"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            >
+
+        <com.maimai.demo.widget.CommonTextView
+                android:id="@+id/tvCircle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="好友的好友"
+                android:textColor="#a6b1bf"
+                android:textSize="12sp"
+                />
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+
+            <LinearLayout
+                    android:id="@+id/llPrizeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    >
+
+                <ImageView
+                        android:id="@+id/ivPrizeImage"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/icon_act_prize_gray"
+                        />
+
+                <com.maimai.demo.widget.CommonTextView
+                        android:id="@+id/tvPrizeCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赞"
+                        android:textColor="#a6b1bf"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="13dp"
+                        />
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="13dp"
+                    android:gravity="center_vertical"
+                    >
+
+                <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/icon_act_comment"
+                        />
+
+                <com.maimai.demo.widget.CommonTextView
+                        android:id="@+id/tvCommentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#a6b1bf"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="13dp"
+                        />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llSpreadLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="13dp"
+                    >
+
+                <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:src="@drawable/icon_act_spread_gray"
+                        />
+
+                <com.maimai.demo.widget.CommonTextView
+                        android:id="@+id/tvSpread"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分享"
+                        android:textColor="#a6b1bf"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="8dp"
+                        />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

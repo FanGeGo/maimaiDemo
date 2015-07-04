@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实名动态"
+            android:checked="true"
+            android:textColor="@color/nagivation_bar_text_color_selector"
+            android:textSize="18sp"
+            />
+
+    <View
+            android:id="@+id/viLine"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tvTitle"
+            android:background="@drawable/nagivation_bar_line_color_selector"
+            android:layout_alignLeft="@id/tvTitle"
+            android:layout_alignRight="@id/tvTitle"
+            android:layout_marginTop="8dp"
+            />
+
+</RelativeLayout>

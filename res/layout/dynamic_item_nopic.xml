@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:descendantFocusability="blocksDescendants"
+              android:padding="15dp"
+
+        >
+
+    <include
+            android:id="@+id/rlToLayout"
+            layout="@layout/dynamic_item_top_layout"
+            />
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/dynamic_item_bottom_layout"
+            />
+
+</LinearLayout>

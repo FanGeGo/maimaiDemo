@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        >
+
+    <com.maimai.demo.widget.RoundedImageView
+            android:id="@+id/ivIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:corner_radius="2dp"
+            android:src="@drawable/icon"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="夏晓风"
+            android:layout_toRightOf="@id/ivIcon"
+            android:layout_marginLeft="10dp"
+            android:textColor="#5577a7"
+            android:textSize="15sp"
+            />
+
+
+    <View
+            android:id="@+id/viLine"
+            android:layout_width="1dp"
+            android:layout_height="5dp"
+            android:background="#798b9a"
+            android:layout_toRightOf="@id/tvName"
+            android:layout_alignTop="@+id/tvCompany"
+            android:layout_alignBottom="@+id/tvCompany"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            />
+
+    <TextView
+            android:id="@+id/tvCompany"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Google Android实验室"
+            android:layout_toRightOf="@id/viLine"
+            android:textColor="#798b9a"
+            android:textSize="12sp"
+            android:layout_alignBottom="@id/tvName"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+    <TextView
+            android:id="@+id/tvJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发工程师"
+            android:layout_toRightOf="@id/tvCompany"
+            android:textColor="#798b9a"
+            android:textSize="12sp"
+            android:layout_alignBottom="@id/tvName"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="广州"
+            android:layout_toRightOf="@id/ivIcon"
+            android:layout_alignLeft="@id/tvName"
+            android:textColor="#a6b1bf"
+            android:layout_alignBottom="@id/ivIcon"
+            android:textSize="12sp"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvProfessional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开发"
+            android:layout_toRightOf="@id/tvCity"
+            android:layout_marginLeft="5dp"
+            android:textColor="#a6b1bf"
+            android:layout_alignBottom="@id/ivIcon"
+            android:textSize="12sp"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一天内"
+            android:layout_toRightOf="@id/tvProfessional"
+            android:layout_marginLeft="5dp"
+            android:textColor="#a6b1bf"
+            android:layout_alignBottom="@id/ivIcon"
+            android:textSize="12sp"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tvName"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/ivIcon"
+            android:layout_marginTop="15dp"
+            android:lineSpacingMultiplier="1.4"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:maxLines="10"
+            />
+
+    <com.maimai.demo.widget.CommonTextView
+            android:id="@+id/tvMoreContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvContent"
+            android:textColor="#5577a7"
+            android:textSize="15sp"
+            android:layout_alignLeft="@id/tvName"
+            android:text="全文"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:visibility="gone"
+            />
+
+</RelativeLayout>

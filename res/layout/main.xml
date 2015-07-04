@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+
+        >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#242424"
+            >
+
+
+        <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/search_btn_bg"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                />
+
+        <LinearLayout
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal"
+                >
+
+            <com.maimai.demo.widget.TabWithLineView
+                    android:id="@+id/tabDynamic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tab_title="实名动态"
+                    app:tab_select="true"
+                    />
+
+            <com.maimai.demo.widget.TabWithLineView
+                    android:id="@+id/tabBagua"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tab_title="匿名八卦"
+                    android:layout_marginLeft="50dp"
+                    />
+        </LinearLayout>
+
+        <Button
+                android:id="@+id/btnEdit"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:background="@drawable/edit_btn_bg"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+
+</LinearLayout>
+
